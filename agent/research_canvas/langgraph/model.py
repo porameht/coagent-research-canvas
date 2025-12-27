@@ -31,7 +31,7 @@ def get_model(state: AgentState) -> BaseChatModel:
         from langchain_google_genai import ChatGoogleGenerativeAI
         return ChatGoogleGenerativeAI(
             temperature=0,
-            model="gemini-1.5-pro",
+            model="gemini-2.0-flash",
             api_key=cast(Any, os.getenv("GOOGLE_API_KEY")) or None
         )
 
